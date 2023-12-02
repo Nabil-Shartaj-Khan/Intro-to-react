@@ -1,28 +1,19 @@
 import { useState, useEffect} from "react";
 import Listshow from "./Listshow";
+import useFetch from "./useFetch";
 
 function Favourite() {
-
-    const [things,setThings]=useState([]);
-
-    // *********************************************
-    useEffect(() => {
-        fetch("http://localhost:8000/things").then(res => {
-            return res.json();
-        }). then (data => setThings(data));
+    
+    const {things,isLoading,error}=useFetch("http://localhost:8000/things");
 
 
-    },[]);
-
-   return ( 
-
+      return (
         <div className="list p-5 ">
-
-           <Listshow things={things} title="All list items-"/>
-
+          {isLoading && <div>Loading data....</div>}
+          {error && <div className="error">{error}</div>}
+          <Listshow things={things} title="All list items from JSON file-" />
         </div>
-
-     );
+      );
 }
 
 export default Favourite;
