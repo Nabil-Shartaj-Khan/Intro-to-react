@@ -1,6 +1,16 @@
+const testingBtn=(status)=>{
+    if (status==true){
+        return <button>Status ON button</button>
+    }
+    else {
+        return <button>Status Off button</button>
+    }
+}
 
 
 const Contact = () => {
+
+
     return (
         <div>
 
@@ -10,6 +20,10 @@ const Contact = () => {
                 <li>Email: shartajnabil@gmail.com</li>
                 <li>Facebook: Nabil Shartaz Khan</li>
             </ul>
+            <br></br>
+
+            {testingBtn(false)}<br></br><br></br>
+
             
         </div>
     );
