@@ -2,10 +2,23 @@ import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import List from './../component/List';
+import About from "../component/About";
 
 const App = () => {
 
   let loggedIn=true;
+
+  const aboutDetail={
+    name:'Nabil Shartaj Khan',
+    age:24,
+    profession:'Student',
+    department:"CSE",
+    usertype:"Admin"
+  }
+
+  const buttonClick=()=>{
+    alert("You clicked the button which is a props item primarily located in App.jsx and propped in About.jsx")
+  }
 
 
   
@@ -27,8 +40,9 @@ const App = () => {
       </h1>
 
       <button>LOGOUT</button>
-      <Header></Header>
-      <List/>
+      <Header title="Welcome Admin" des="You are an Admin"></Header>
+      <About detail={aboutDetail} click={buttonClick}></About>
+       <List/>
       <Contact></Contact>
       <Footer></Footer>
 

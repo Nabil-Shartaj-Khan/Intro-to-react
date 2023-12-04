@@ -10,6 +10,14 @@ const testingBtn=(status)=>{
 
 const Contact = () => {
 
+    const formControl=(event)=>{
+        
+        event.preventDefault();
+
+        alert("Form is submitted!")
+
+}
+
 
     return (
         <div>
@@ -23,6 +31,18 @@ const Contact = () => {
             <br></br>
 
             {testingBtn(false)}<br></br><br></br>
+
+            <h2>Send us a message-</h2>
+            <form onSubmit={formControl}>
+                Name: <input placeholder="Enter your name"></input><br></br>
+                Member ID: <input placeholder="Enter your member ID"></input><br></br>
+                Message: <br></br>
+                <textarea style={{
+                    height:'100px', width:'200px'
+                }}></textarea> <br></br>
+                <input type="submit"></input>
+
+            </form><br></br>
 
             
         </div>
