@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 const testingBtn=(status)=>{
     if (status==true){
         return <button>Status ON button</button>
@@ -17,6 +19,13 @@ const Contact = () => {
         alert("Form is submitted!")
 
 }
+
+let newRef=useRef();
+
+const showMessage=()=>{
+    newRef.innerHTML="<strong>Form has been submitted!</strong>"
+}
+
 
 
     return (
@@ -40,7 +49,8 @@ const Contact = () => {
                 <textarea style={{
                     height:'100px', width:'200px'
                 }}></textarea> <br></br>
-                <input type="submit"></input>
+                <h4 ref={(h4)=>newRef=h4}></h4>
+                <input type="submit" onClick={showMessage}></input>
 
             </form><br></br>
 
