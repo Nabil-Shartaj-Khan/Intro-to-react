@@ -1,0 +1,13 @@
+    // const newRef = useRef();
+
+    
+    // const changeImage = () => {
+    //     if (newRef.current) {
+    //         newRef.current.src = 'https://placehold.co/600x400?text=Hello+World';
+    //         newRef.current.setAttribute('height', '300px');
+    //         newRef.current.setAttribute('width', '300px');
+    //         newRef.current.setAttribute('title', 'Changed sized Image');
+    //     }
+    // }  
+ {/* <img ref={newRef} src="https://placehold.co/600x400/png" alt="Placeholder" /><br />
+            <button onClick={changeImage}>Change image</button><br /> */}

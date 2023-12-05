@@ -3,6 +3,7 @@ import Footer from "../component/Footer";
 import Header from "../component/Header";
 import List from './../component/List';
 import About from "../component/About";
+import Image from "../component/Image";
 
 const App = () => {
 
@@ -43,6 +44,7 @@ const App = () => {
       <Header title="Welcome Admin" des="You are an Admin"></Header>
       <About detail={aboutDetail} click={buttonClick}></About>
        <List/>
+      <Image></Image>
       <Contact></Contact>
       <Footer></Footer>
 

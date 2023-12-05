@@ -16,7 +16,7 @@ const Contact = () => {
         
         event.preventDefault();
 
-        alert("Form is submitted!")
+        confirm("Submit form?")
 
 }
 
@@ -25,6 +25,7 @@ let newRef=useRef();
 const showMessage=()=>{
     newRef.innerHTML="<strong>Form has been submitted!</strong>"
 }
+
 
 
 
