@@ -1,7 +1,18 @@
+import { useRef } from "react";
+
 const List = () => {
     let itemsList = ['Rainbow Six', 'Arsenal', 'FIFA', 'Football', 'Cats', 'Coding'];
-    
-    return (
+
+    //useref persisted mutable
+
+    let num=useRef(0);
+
+    const numChange=()=>{
+        num.current++;
+        console.log(num)
+    }
+
+return (
 
         <div>
             <h3>Items List are-</h3>
@@ -13,6 +24,7 @@ const List = () => {
                 })
                 }
             </ul>
+            <button onClick={numChange} className="mb-4">Click and check console log</button>   
         </div>
     );
 };
