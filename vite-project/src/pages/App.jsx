@@ -4,6 +4,7 @@ import Header from "../component/Header";
 import List from './../component/List';
 import About from "../component/About";
 import Image from "../component/Image";
+import Count from "../component/Count";
 
 const App = () => {
 
@@ -42,9 +43,10 @@ const App = () => {
 
       <button>LOGOUT</button>
       <Header title="Welcome Admin" des="You are an Admin"></Header>
-      <About detail={aboutDetail} click={buttonClick}></About>
        <List/>
       <Image></Image>
+      <Count></Count>
+      <About detail={aboutDetail} click={buttonClick}></About>
       <Contact></Contact>
       <Footer></Footer>
 

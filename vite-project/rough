@@ -1,0 +1,6 @@
+    const NormalNumber=()=> {
+        newNumber(number);
+    }
+
+
+    const [newNumber,resetNumber]=useState(setNumber);            <button onClick={NormalNumber}>Reset</button>
