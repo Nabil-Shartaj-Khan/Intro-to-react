@@ -50,6 +50,7 @@ const App = () => {
       <Header title="Welcome Admin" des="You are an Admin"></Header>
       
       <BrowserRouter>
+      <Navlink></Navlink>
       <Routes>
         <Route path='/list' element={<List/>}></Route>
         <Route path='/form' element={<Form></Form>}></Route>
@@ -61,7 +62,7 @@ const App = () => {
         <Route path='/about' element={<About detail={aboutDetail} click={buttonClick}></About>}></Route>
         <Route path='/footer' element={<Footer></Footer>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
-   </Routes>
+    </Routes>
       </BrowserRouter>
       <button>LOGOUT</button>
 

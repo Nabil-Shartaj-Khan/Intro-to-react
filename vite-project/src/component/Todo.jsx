@@ -26,6 +26,7 @@ const Todo = () => {
 
 
         <div>
+        <>
             <table>
                 <tbody>
                     {
@@ -52,7 +53,7 @@ const Todo = () => {
             
             <input onChange={(e)=>setItem(e.target.value)} placeholder='Add your items here'></input>
             <button onClick={addToList}>Add your work list</button>
-            
+            </> 
         </div>
     );
 };

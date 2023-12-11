@@ -1,5 +1,6 @@
 import { useRef } from "react";
 
+
 const List = () => {
     let itemsList = ['Rainbow Six', 'Arsenal', 'FIFA', 'Football', 'Cats', 'Coding'];
 
@@ -15,6 +16,7 @@ const List = () => {
 return (
 
         <div>
+            <>
             <h3>Items List are-</h3>
             <p><strong>NOTE : </strong> Used list rendering</p>
             <ul>
@@ -25,6 +27,7 @@ return (
                 }
             </ul>
             <button onClick={numChange} className="mb-4">Click and check console log</button>   
+            </>
         </div>
     );
 };
