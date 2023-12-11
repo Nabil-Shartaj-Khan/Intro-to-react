@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
@@ -5,6 +6,12 @@ import List from './../component/List';
 import About from "../component/About";
 import Image from "../component/Image";
 import Count from "../component/Count";
+import Todo from "../component/Todo";
+import Form from "../component/Form";
+import Apicall from "../component/Apicall";   
+import NotFound from "../component/NotFound";
+import Navlink from "../component/Navlink";
+
 
 const App = () => {
 
@@ -40,15 +47,23 @@ const App = () => {
       Welcome to the React tutorial
 
       </h1>
-
-      <button>LOGOUT</button>
       <Header title="Welcome Admin" des="You are an Admin"></Header>
-       <List/>
-      <Image></Image>
-      <Count></Count>
-      <About detail={aboutDetail} click={buttonClick}></About>
-      <Contact></Contact>
-      <Footer></Footer>
+      
+      <BrowserRouter>
+      <Routes>
+        <Route path='/list' element={<List/>}></Route>
+        <Route path='/form' element={<Form></Form>}></Route>
+        <Route path='/image' element={<Image></Image>}></Route>
+        <Route path='/todo' element={<Todo></Todo>}></Route>
+        <Route path='/count' element={<Count></Count>}></Route>
+        <Route path='/api' element={<Apicall></Apicall>}></Route>
+        <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/about' element={<About detail={aboutDetail} click={buttonClick}></About>}></Route>
+        <Route path='/footer' element={<Footer></Footer>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+   </Routes>
+      </BrowserRouter>
+      <button>LOGOUT</button>
 
     
     </>
