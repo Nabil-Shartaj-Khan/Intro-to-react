@@ -13,4 +13,4 @@ What i learnt till now-
 7. Used usestate to manage and update form in Form.jsx
 8. Used useEffect to fetch dummy JSON data using promises and async/await in Apicall.jsx.
 9. Used routing in app.jsx for showcasing all the things done yet
-10. 
+10. Added hashrouting and query parameters. 
