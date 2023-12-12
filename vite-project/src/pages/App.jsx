@@ -39,15 +39,7 @@ const App = () => {
       
       
       <> 
-      <h1 style={{
-        color:'red',
-        fontFamily:'sans-serif'
-      }}> 
 
-      Welcome to the React tutorial
-
-      </h1>
-      <Header title="Welcome Admin" des="You are an Admin"></Header>
       
       {/* <BrowserRouter>
       <Navlink></Navlink>
@@ -67,7 +59,17 @@ const App = () => {
 
 
       <HashRouter>
+        
       <Navlink></Navlink>
+      <h1 style={{
+        color:'red',
+        fontFamily:'sans-serif'
+      }}> 
+
+      Welcome to the React tutorial
+
+      </h1>
+      <Header title="Welcome Admin" des="You are an Admin"></Header>
       <Routes>
         <Route path='/list' element={<List/>}></Route>
         <Route path='/form' element={<Form></Form>}></Route>

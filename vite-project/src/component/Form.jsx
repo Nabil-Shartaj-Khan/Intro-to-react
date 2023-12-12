@@ -46,7 +46,7 @@ const Form = () => {
                 <input onChange={()=>{whenInputChange('gender','male')}} checked={formObj.gender==="male"} type="radio" id="male" name="gender" value="male" />
                 <label htmlFor="female">Female</label>
                 <input onChange={()=>{whenInputChange('gender','female')}} checked={formObj.gender==="female"} type="radio" id="female" name="gender" value="female" /><br /><br />
-                <button type="submit">Submit</button>
+                <button type="submit">Submit and check console log</button>
             </form>
         </>
     );

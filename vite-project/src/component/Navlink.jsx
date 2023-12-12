@@ -1,8 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Navlink = () => {
     return ( 
-        <div>
-            <h4>Navigate through pages here</h4>
+        <div className="d-flex justify-content-end">
             <ul className="d-flex" style={{ listStyle: 'none', padding: 0 }}>
                    
                 <li className="p-3">    
