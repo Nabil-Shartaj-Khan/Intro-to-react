@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import { useParams } from "react-router-dom";
+
 
 const testingBtn=(status)=>{
     if (status==true){
@@ -10,7 +12,9 @@ const testingBtn=(status)=>{
 }
 
 
-const Contact = () => {
+const Contact = () => { 
+
+    let {id,name}=useParams();
 
     const formControl=(event)=>{
         
@@ -31,6 +35,9 @@ const showMessage=()=>{
 
     return (
         <div>
+
+            <p>Received Name from parameter:{name}</p>
+            <p>Received ID from parameter:{id}</p>
 
             <h3>Contact me now from the following-</h3>
             <ul>

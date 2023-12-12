@@ -25,7 +25,7 @@ const Navlink = () => {
                     <NavLink  className={(isActive)=>isActive?"active-item":"pending-item"}to="/api">API calling </NavLink>
                 </li>
                 <li className="p-3">
-                    <NavLink className={(isActive)=>isActive?"active-item":"pending-item"} to="/contact">Contact now </NavLink>
+                    <NavLink className={(isActive)=>isActive?"active-item":"pending-item"} to="/contact/09/Nabil">Contact now </NavLink>
                 </li>
                 <li className="p-3">
                     <NavLink className={(isActive)=>isActive?"active-item":"pending-item"} to="/about">About us</NavLink>

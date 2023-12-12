@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
@@ -49,7 +49,7 @@ const App = () => {
       </h1>
       <Header title="Welcome Admin" des="You are an Admin"></Header>
       
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Navlink></Navlink>
       <Routes>
         <Route path='/list' element={<List/>}></Route>
@@ -63,7 +63,25 @@ const App = () => {
         <Route path='/footer' element={<Footer></Footer>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
     </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+
+      <HashRouter>
+      <Navlink></Navlink>
+      <Routes>
+        <Route path='/list' element={<List/>}></Route>
+        <Route path='/form' element={<Form></Form>}></Route>
+        <Route path='/image' element={<Image></Image>}></Route>
+        <Route path='/todo' element={<Todo></Todo>}></Route>
+        <Route path='/count' element={<Count></Count>}></Route>
+        <Route path='/api' element={<Apicall></Apicall>}></Route>
+        <Route path='/contact/:id/:name' element={<Contact></Contact>}></Route>
+        <Route path='/about' element={<About detail={aboutDetail} click={buttonClick}></About>}></Route>
+        <Route path='/footer' element={<Footer></Footer>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+    </Routes>
+
+      </HashRouter>
       <button>LOGOUT</button>
 
     
