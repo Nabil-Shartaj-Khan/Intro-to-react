@@ -1,7 +1,19 @@
 .active-item{
-    color:green
+    color:green;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active-item:hover{
+    color: red;
 }
 
 .pending-item{
     color:red;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.pending-item:hover{
+    color: green;
 }
